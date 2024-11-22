@@ -1,38 +1,65 @@
+/* Definir uma imagem de fundo no estilo da janela */
+body {
+  background-image: url('./527526.png'); /* Caminho para a imagem da janela */
+  background-size: cover; /* A imagem cobrirá todo o fundo */
+  background-position: center; /* A imagem ficará centralizada */
+  background-attachment: fixed; /* A imagem não se moverá enquanto a página rola */
+  color: #f4f4f4; /* Texto claro para contraste */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Impede rolagem excessiva */
+}
+
 .App {
   text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para contraste com a imagem */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 3rem;
+  color: #d1c8b0; /* Cor inspirada no ambiente do jogo */
+  font-family: 'Georgia', serif;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.meu-componente {
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro para os elementos */
+  border-radius: 10px;
+  padding: 20px;
+  color: #d1c8b0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2 {
+  font-size: 2rem;
+  color: #c4a180; /* Um tom mais dourado para os títulos */
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #c4a180;
+}
+
+/* Adicionar uma borda de estilo desgastado */
+.App, .meu-componente {
+  border: 2px solid #4b3f33; /* Cor que remete ao tom desgastado de madeira */
+}
+
+/* Adicionar sombra nas bordas */
+.App, .meu-componente {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
